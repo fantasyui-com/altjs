@@ -1,6 +1,12 @@
 # altjs
 Alternative JavaScript within Reason: A fluid lightweight framework for smoothest data patterns in the best of ways.
 
+## How Alternative?
+
+JavaScript treats data as something that does not change much, and if it does it won't have too much of consequence. In reality new data is constantly being pumped into the client from a pool of multiple users, the UI must update and potentially send out more updates, including local ones that will await a packet round trip.
+
+where we have the naive ```cat.name = 'Mr. Fluffy'``` we need ```update(data).then.updateUI()``` the standard ```... = 'Mr. Fluffy'``` is useless, far too low level. Alternative patterns such as Proxy, EventEmitter, ObjectStream go a long way, but leave out HTML, and the way we must do HTML is via ```getElementById()``` it is just how HTML works.
+
 ## Why?
 
 JSX like E4X (ECMAScript for XML) is a bad idea. Mixing Flux with GraphQL is a bad idea.
