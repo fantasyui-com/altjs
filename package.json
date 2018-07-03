@@ -1,0 +1,20 @@
+{
+  "name": "altjs",
+  "version": "1.0.0",
+  "description": "Alternative JavaScript within Reason: A fluid lightweight framework for smoothest data patterns in the best of ways.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fantasyui-com/altjs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fantasyui-com/altjs/issues"
+  },
+  "homepage": "https://github.com/fantasyui-com/altjs#readme"
+}
