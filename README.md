@@ -3,16 +3,54 @@ Alternative JavaScript within Reason: A fluid lightweight framework for smoothes
 
 ## Framework Origin
 
-I created [data-command](https://github.com/fantasyui-com/data-command) briefly pondered [JSX](https://reactjs.org/docs/introducing-jsx.html)/[E4X](https://en.wikipedia.org/wiki/ECMAScript_for_XML) and [sweetjs](https://www.sweetjs.org) and decided that the three were not the correct paths forward.
+I created [data-command](https://github.com/fantasyui-com/data-command) briefly pondered [JSX](https://reactjs.org/docs/introducing-jsx.html)/[E4X](https://en.wikipedia.org/wiki/ECMAScript_for_XML) and [sweetjs](https://www.sweetjs.org) and decided that the three were not the correct paths forward. I found [h](https://www.npmjs.com/package/h) to be very promising and [d3](https://d3js.org/) to point toward the correct directions.
 
-I found [h](https://www.npmjs.com/package/h) to be very promising and [d3](https://d3js.org/) to point toward the correct directions.
+Data-command revealed that HTML ceases to be readable where we try to connect it with data. JSX/E4X revealed that bringing markup into code is like putting a fat pig on an expensive lipstick.
 
 ```HTML
 
 <ul data-command="stream --source Applications/Todo/Today --template todo-item-template --reconciler plain | load " class="list-group list-group-flush"></ul>
-
+<div class="d-none template" id="todo-item-template">
+    <li class="list-group-item bg-info text-white">
+      <input data-variable="text" type="text" class="form-control todo-text text-white" placeholder="Enter task text">
+    </li>
+</div>
 
 ```
+
+HTML could work, if it was one in parts, like d3 explains .enter() should be done. But at this point we migt as well use our JS.
+
+```JavaScript
+
+const node = document.getElementById('#my-app');
+const data = enbuffer(emitter, filter => tagged(packet.tags, ['flarp']));
+const view = Reconciler;
+
+mount({ node, data, view });
+
+```
+
+where view looks as follows
+
+```JavaScript
+
+
+  var source   = document.getElementById("entry-template").innerHTML;
+  var template = altjs.compileTemplate(source);
+
+  function render(node, data){
+    const html = template(data);
+    node.innerHTML = html;
+  }
+
+  function(node, data){
+    data.on('change', data => render(node, data))
+    render(node, data);
+  }
+
+```
+
+
 
 ## How Alternative?
 
