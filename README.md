@@ -3,7 +3,7 @@ Alternative JavaScript within Reason: A fluid lightweight framework for smoothes
 
 ## Framework Origin
 
-I created [data-command](https://github.com/fantasyui-com/data-command) briefly pondered [JSX](https://reactjs.org/docs/introducing-jsx.html)/[JSX]/[E4X](https://en.wikipedia.org/wiki/ECMAScript_for_XML) and [sweetjs](https://www.sweetjs.org) and decided that the three were not the correct paths forward.
+I created [data-command](https://github.com/fantasyui-com/data-command) briefly pondered [JSX](https://reactjs.org/docs/introducing-jsx.html)/[E4X](https://en.wikipedia.org/wiki/ECMAScript_for_XML) and [sweetjs](https://www.sweetjs.org) and decided that the three were not the correct paths forward.
 
 I found [h](https://www.npmjs.com/package/h) to be very promising and [d3](https://d3js.org/) to point toward the correct directions.
 
