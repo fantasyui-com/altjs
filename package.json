@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/fantasyui-com/altjs/issues"
   },
-  "homepage": "https://github.com/fantasyui-com/altjs#readme"
+  "homepage": "https://github.com/fantasyui-com/altjs#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babelify": "^8.0.0",
+    "brfs": "^2.0.0"
+  }
 }
