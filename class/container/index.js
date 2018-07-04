@@ -6,20 +6,15 @@ const descendants = require('../../mixin/descendants');
 const children = require('../../mixin/children');
 
 
-module.exports = {Container};
 
 class Base {
 
   constructor(){
-
+    this.FOO = 'GGG';
   }
-
-
-  //
-  // getParent(){}
-  // getDescendants(){}
-  // getChildren(){}
 
 }
 
-class Container extends mixOf(Base).with(attributes, parents, descendants, children) {
+class Container extends mixOf(Base).with(attributes, parents, descendants, children) {}
+
+module.exports = Container;
