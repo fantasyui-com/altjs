@@ -1,6 +1,27 @@
 # altjs
-Alternative JavaScript within Reason: A fluid lightweight framework for smoothest data patterns in the best of ways.
+High Altitude JavaScript: Because no framework is perfect, and sometimes, no framework is perfect.
 
-## Framework Origins
+## Big Problems
+- We needed an iframe pointing at a distant domain with an app communicating via postMessage (ex. piracy prevention)
+- Multiple tabs pointing to the same app must update in harmony (ex: two screens two tabs)
 
-I created [data-command](https://github.com/fantasyui-com/data-command) briefly pondered [JSX](https://reactjs.org/docs/introducing-jsx.html)/[E4X](https://en.wikipedia.org/wiki/ECMAScript_for_XML) and [sweetjs](https://www.sweetjs.org) and decided that the three were not the correct paths forward. I found [h](https://www.npmjs.com/package/h) to be very promising and [d3](https://d3js.org/) to point toward the correct directions, but it was too hard to comprehend application structure. Therefore I looked to the Container/Component/Repeater pattern, but rather than the commpn approach that binds the data within, here the data is what drives the instantiation of the trio.
+## Solutions at a Glance
+
+1. [Container/Component/Repeater](https://github.com/fantasyui-com/application-container) pattern used for UI creation that can contain multiple frameworks and even iframes.
+  - Compatible with XML based Application Initialization.
+  - Compatible with a GUI Based Builder
+  - Compatible with Informative Developer Tools
+
+2. EventEmitter based [GraftTree](https://github.com/fantasyui-com/graft-tree) in multiple branch flavors including ACL.
+  - Waterfall Branch that acts as a filter
+  - ACL Branch that acts as a filter
+  - Mount Branch that injects data
+
+```JavaScript
+
+Data binding example
+
+  const applicationContainer = new ApplicationContainer ( domNode , data);
+
+
+```

@@ -1,7 +1,8 @@
 
-module.exports = function(superclass){
+module.exports = function(Class){
 
-  return class extends superclass {
+  return class extends Class {
+
 
     getAttribute(){
 
@@ -10,7 +11,7 @@ module.exports = function(superclass){
     setAttribute(){
 
     }
-    
+
   }
 
 
