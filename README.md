@@ -25,3 +25,12 @@ Data binding example
 
 
 ```
+
+## Todo
+
+Kitchen Sink Examples
+
+## History
+
+- Moved [Application Container](https://github.com/fantasyui-com/application-container) and [GraftTree](https://github.com/fantasyui-com/graft-tree) to separate repositories.
+- Created Example, making this repository the primary Kitchen Sink
