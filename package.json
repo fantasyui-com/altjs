@@ -29,6 +29,6 @@
   "dependencies": {
     "application-container": "^1.5.0",
     "graft-tree": "^1.1.0",
-    "mixof": "^1.3.0"
+    "mixof": "^1.4.0"
   }
 }
