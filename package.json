@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "application-container": "^1.5.0",
-    "graft-tree": "^1.1.0",
+    "graft-tree": "^1.2.0",
     "mixof": "^1.4.0"
   }
 }
