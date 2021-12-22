@@ -1,6 +1,6 @@
 {
   "name": "altjs",
-  "version": "1.29.0",
+  "version": "1.30.0",
   "description": "Alternative JavaScript within Reason: A fluid lightweight framework for smoothest data patterns in the best of ways.",
   "main": "index.js",
   "scripts": {
