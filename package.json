@@ -19,9 +19,9 @@
   },
   "homepage": "https://github.com/fantasyui-com/altjs#readme",
   "devDependencies": {
-    "babel-core": "^4.7.16",
-    "babel-preset-env": "^1.7.0",
-    "babelify": "^10.0.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.4.0",
+    "babelify": "^9.0.0",
     "brfs": "^2.0.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
